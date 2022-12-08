@@ -1,0 +1,1 @@
+list_ban = 'https://reestr.rublacklist.net/api/v2/current/json'
