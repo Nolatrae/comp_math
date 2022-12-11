@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="321"
+   height="321"
+   viewBox="0 0 84.931248 84.931252"
+   version="1.1"
+   id="svg43408"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="one.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview43410"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="321px"
+     inkscape:zoom="1.4823793"
+     inkscape:cx="236.4442"
+     inkscape:cy="177.75477"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs43405" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#1b11fe;fill-opacity:1;stroke:none;stroke-width:0.376636px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 33.958869,15.754796 v 68.719409 h 20.57091 V 0.48381676 H 33.869042 L 15.00489,9.8260644"
+       id="path49774" />
+    <path
+       style="fill:#1b11fe;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:bevel"
+       d="m 17.684955,15.146295 c -1.469594,-2.922443 -2.653057,-5.3334842 -2.629917,-5.35787 0.06498,-0.068501 19.020055,5.693426 19.020055,5.781681 0,0.04282 -3.044906,1.144768 -6.76646,2.448772 -3.721554,1.304001 -6.808136,2.386671 -6.859074,2.405932 -0.05095,0.01925 -1.295007,-2.356074 -2.764604,-5.278515 z"
+       id="path59254" />
+    <path
+       style="fill:#1b11fe;fill-opacity:1;stroke:#676000;stroke-width:0;stroke-linejoin:bevel"
+       d=""
+       id="path59293" />
+    <path
+       style="fill:#1b11fe;fill-opacity:1;stroke:#676000;stroke-width:0;stroke-linejoin:bevel"
+       d=""
+       id="path59332" />
+  </g>
+</svg>

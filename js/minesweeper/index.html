@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Сапёр</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="area">
+      <div class="info_bar">
+        <div class="time cell_closed">
+          ВРЕМЯ: <span class="stopwatch">00:00</span>
+        </div>
+        <div class="settings">
+          <div class="set_btn cell_closed">
+
+          </div>
+          <div class="cell_closed reset_btn reset_btn_alive">
+          </div>
+        </div>
+        <div class="flags_left cell_closed">
+          ФЛАЖКИ: <span class="flags">20</span>
+        </div>
+      </div>
+      <div class="wrapper">
+      </div>
+    </div>
+    <div class="params">
+      <div class="params_header">
+        Параметры игры
+      </div>
+      <div class="params_line">
+        Ширина
+        <input tabindex="1" type="number" name="width" min="8" max="99">
+      </div>
+      <div class="params_line">
+        Высота
+        <input tabindex="2" type="number" name="height" min="3" max="99">
+      </div>
+      <div class="params_line">
+        Бомбы
+        <input tabindex="3" type="number" name="bombs" min="3">
+      </div>
+      <div class="ok_btn">
+        ОК
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts/timer.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </body>
+</html>

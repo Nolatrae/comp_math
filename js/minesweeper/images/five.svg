@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="321"
+   height="321"
+   viewBox="0 0 84.931248 84.931252"
+   version="1.1"
+   id="svg43408"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="five.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview43410"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="321px"
+     inkscape:zoom="0.74118965"
+     inkscape:cx="-164.60025"
+     inkscape:cy="-96.466539"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs43405">
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect1018"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="0,1.0496737"
+       not_jump="false"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect1032"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="0,1"
+       not_jump="false"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="zerowidth" />
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#60060d;fill-opacity:1;stroke-width:0;stroke-linejoin:bevel"
+       d="M 1.2179784,76.831345 V 68.693412 H 30.229957 59.241933 l 0.673172,-1.500026 c 1.88978,-4.210992 1.768715,-9.26709 -0.38228,-15.965246 L 59.271487,50.414351 H 30.369931 1.4683758 V 25.374545 0.33473826 L 39.59148,0.33573425 c 20.967702,5.7728e-4 39.559761,0.0742809 41.315679,0.16383915 l 3.192574,0.16282723 V 9.2624883 17.862583 H 55.565249 27.030765 l -0.636547,2.015025 c -1.378021,4.362213 -1.407297,9.046388 -0.08071,12.91335 l 0.591119,1.723093 23.69562,0.06386 23.695627,0.06386 1.22695,1.68892 c 12.599459,17.343398 12.719122,31.365715 0.399583,46.823179 l -1.446858,1.815385 H 37.846765 1.2179784 Z"
+       id="path18003" />
+  </g>
+</svg>
