@@ -2,7 +2,7 @@ import json
 import requests
 
 URL = "https://stt.api.cloud.yandex.net/speech/v1/stt:recognize"
-TOKEN = "t1.9euelZrKysfPk5yRlozJmMmJjsuZk-3rnpWais-QkJ7OlZOcic6Llpaenprl8_cIUyVj-e8pcBk1_N3z90gBI2P57ylwGTX8.wJ0IJmXJKTbutP8aSjhT36vHZWT6csFnNj_LWl3Lxc7wEyc4HoKg7tGF25UxboKVUHLsPhnEamaGdIrwrUrVDw"
+TOKEN = " t1.9euelZrMlIqbnpXJj5yVlciQnM6Lie3rnpWais-QkJ7OlZOcic6Llpaenprl8_cjEQZj-e9QAAUS_t3z92M_A2P571AABRL-.gOBX76B6Hs3jPwMekiARb_XmSTSc58AkCSFjGF4MbiQfvK60DR5qaFC-S3lU2EPdnMnZf3rUahrAvIhw6YF3CQ"
 ID_FOLDER = "b1gtf3dqupicap0o7l1v"
 
 with open("zamal-golod.ogg", "rb") as f:
@@ -16,8 +16,8 @@ params = {
     'sampleRateHertz': 48000,
 }
 
-response = requests.post(URL, params=params, headers=headers, data=music)
-decode_resp = response.content.decode('UTF-8')
-text = json.loads(decode_resp)
+req = requests.post(URL, params=params, headers=headers, data=music)
+dec_req = req.content.decode('UTF-8')
+text = json.loads(dec_req)
 
 print(text)
