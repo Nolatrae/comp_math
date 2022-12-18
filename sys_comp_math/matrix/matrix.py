@@ -1,3 +1,4 @@
+import vector
 import vector as v
 from copy import deepcopy
 

@@ -2,15 +2,6 @@ import unittest
 import approximation as ap
 
 class tester_approximation(unittest.TestCase):
-    def test_MNK_with_2_sys(self):
-        info = [[2, 4], [3, 9]]
-        responce = 2.69
-        self.assertEqual(round(ap.MNK(info)[0], 2), responce)
-
-    def test_MNK_with_3_sys(self):
-        info = [[2, 3, 7], [3, 3, 7], [4, 7, 3]]
-        responce = [4.68, -2.06]
-        self.assertEqual([round(item, 2) for item in ap.MNK(info)], responce)
 
     def test_line_approximation_with_1_x(self):
         info = [[1, 2], [3, 4], [3.5, 3], [6, 7]]

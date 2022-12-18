@@ -146,7 +146,14 @@ def check_size(v1, v2):
         raise ValueError(mess)
     return True
 
+def cv(vector):
+    return type(vector) == int or type(vector) == float
 
+def sort(vector_arr1, vector_arr2):
+    if cv(vector_arr1):
+        return vector_arr2, vector_arr1
+    else:
+        return vector_arr1, vector_arr2
 def vec_num(v, num):
     if type(v) == list:
         if check_vec(v) and type(num) in (int, float):

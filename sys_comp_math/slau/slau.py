@@ -1,7 +1,34 @@
 import matrix as m
 from copy import deepcopy
 
+def union(mat):
+    mat = deepcopy(mat)
+    res = []
+    for i in range(len(mat)):
+        res += [mat[i][-1]]
+        mat[i][-1] = 1
+    return mat, res
 
+def MNK(sys_three):
+    values = []
+    for i in range(len(sys_three)):
+        values_str = []
+        for j in range(len(sys_three[i])):
+            values_str += [sys_three[i][j]]
+        values = [values_str] + values
+    responce = []
+    b = []
+    for j in range(len(values) - 1):
+        b += [0]
+        for i in range(len(values)):
+            b[-1] += values[i][j] * values[i][-1]
+    for j in range(len(values) - 1):
+        responce_line = [0 for i in range(len(values) - 1)]
+        for c in range(len(responce_line)):
+            for i in range(len(values)):
+                responce_line[c] += values[i][c] * values[i][j]
+        responce += [responce_line]
+    return slau_GJ(responce, b)
 def inverse(matrix):
     diagonal_mat = unit_matrix(len(matrix))
     return slau_GJ(matrix, diagonal_mat)
