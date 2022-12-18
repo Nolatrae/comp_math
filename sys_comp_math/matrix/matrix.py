@@ -1,3 +1,4 @@
+import vector
 import vector as v
 from copy import deepcopy
 
@@ -28,22 +29,23 @@ def mul_matrix(a, b):
     copy_mat = []
     if check_matrix(a, b):
         check_size(a, b)
-        if (check_mat(b)):
-            for i in range(len(a)):
+        # if (check_mat(b)):
+        #     for i in range(len(a)):
+        #         temp = []
+        #         for c in range(len(b)):
+        #             cell_temp = 0
+        #             for j in range(len(a[c])):
+        #                 cell_temp += a[i][j] * b[j][c]
+        #             temp += [cell_temp]
+        #         copy_mat += [temp]
+        # else:
+        for i in range(len(a)):
                 temp = []
-                for c in range(len(b)):
-                    cell_temp = 0
-                    for j in range(len(a[c])):
-                        cell_temp += a[i][j] * b[j][c]
-                    temp += [cell_temp]
+                for c in range(len(b[i])):
+                    temp += [0]
+                    for j in range(len(a[i])):
+                        temp[-1] += a[i][j] * b[j][c]
                 copy_mat += [temp]
-        else:
-            for i in range(len(a)):
-                for c in range(len(b)):
-                    cell_temp = 0
-                    for j in range(len(a[c])):
-                        cell_temp += a[i][j] * b[j]
-                copy_mat += [cell_temp]
     return copy_mat
 
 

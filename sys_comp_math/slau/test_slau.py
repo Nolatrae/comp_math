@@ -53,11 +53,6 @@ class test_slau(unittest.TestCase):
                                                                       0.4444444444444444, -0.1111111111111111], [-0.6666666666666666, -1.0, -0.3333333333333333]]
         self.assertEqual(s.inverse(matrix), responce)
 
-    def test_inverse_slau_1(self):
-        matrix = [[1, 3], [4, 5]]
-        answers = [4, 6]
-        responce = [-0.2857142857142856, 1.4285714285714284]
-        self.assertEqual(s.inverse_slau(matrix, answers), responce)
 
     def test_inverse_slau_errors_1(self):
         matrix = [[5, 7], [-8, 2]]
@@ -80,6 +75,21 @@ class test_slau(unittest.TestCase):
             s.inverse_slau(matrix, unright_answers_1)
         with self.assertRaises(ValueError):
             s.inverse_slau(matrix, unright_answers_2)
+
+    def test_union(self):
+        info = [[2, 5], [6, 9]]
+        responce = [[2, 1], [6, 1]], [5, 9]
+        self.assertEqual(s.union(info), (responce))
+
+    def test_MNK_with_2_sys(self):
+        info = [[2, 4], [3, 9]]
+        responce = 2.69
+        self.assertEqual(round(s.MNK(info)[0], 2), responce)
+
+    def test_MNK_with_3_sys(self):
+        info = [[2, 3, 7], [3, 3, 7], [4, 7, 3]]
+        responce = [4.68, -2.06]
+        self.assertEqual([round(item, 2) for item in s.MNK(info)], responce)
 
 
 if __name__ == '__main__':
