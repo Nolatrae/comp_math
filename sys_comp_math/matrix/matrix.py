@@ -29,16 +29,6 @@ def mul_matrix(a, b):
     copy_mat = []
     if check_matrix(a, b):
         check_size(a, b)
-        # if (check_mat(b)):
-        #     for i in range(len(a)):
-        #         temp = []
-        #         for c in range(len(b)):
-        #             cell_temp = 0
-        #             for j in range(len(a[c])):
-        #                 cell_temp += a[i][j] * b[j][c]
-        #             temp += [cell_temp]
-        #         copy_mat += [temp]
-        # else:
         for i in range(len(a)):
                 temp = []
                 for c in range(len(b[i])):

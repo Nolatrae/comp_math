@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7769081-0ffe-4c71-bb13-bd36a0f2fb98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/interpolation/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS/speech_to_text/1671027356.raw" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approximation/approximation.py" beforeDir="false" afterPath="$PROJECT_DIR$/approximation/approximation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approximation/test_approximation.py" beforeDir="false" afterPath="$PROJECT_DIR$/approximation/test_approximation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/approximation/visual_approximation.py" beforeDir="false" afterPath="$PROJECT_DIR$/approximation/visual_approximation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interpolation/test_interpolation.py" beforeDir="false" afterPath="$PROJECT_DIR$/interpolation/test_interpolation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix/matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/matrix/matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slau/slau.py" beforeDir="false" afterPath="$PROJECT_DIR$/slau/slau.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slau/test_slau.py" beforeDir="false" afterPath="$PROJECT_DIR$/slau/test_slau.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vector/vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/vector/vector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/.idea/row_teylor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/macloren.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/test_macloren.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/row_teylor/visual_macloren.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,14 +38,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/comp_math/sys_comp_math/approximation/test_approximation.py&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/comp_math/sys_comp_math/approximation/test_approximation.py",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Compound.Unnamed">
     <configuration name="Unnamed" type="CompoundRunConfigurationType">
       <method v="2" />
     </configuration>

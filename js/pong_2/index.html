@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="css/styles.css">
+    <title>Pong</title>
+</head>
+<body>
+	<div class="wrapper">
+    <div class="header" id="header">
+    <div class="menu_start" id="menu_start" onclick="showMenu()">	
+      M</div>
+    <div class="menu" id="menu">
+      <div class="information">
+        <div class="info" class="player_status" id="left_side">BOT</div>
+        <button class="togle_player" onclick="changePlayer()">Change player</button>
+      </div>
+      <div class="information">
+        <div class="info">Bot difficult</div>
+        <button onclick="difficult(0)">BOT</button>
+        <button onclick="difficult(1)">PRO BOT</button>
+      </div>
+      <div class="information">
+        <div class="info">ball speed</div>
+        <button onclick="ball_speed(1)">ordinary</button>
+        <button onclick="ball_speed(2)">fast</button>
+      </div>
+      <div class="information">
+        <div class="info">platform speed</div>
+        <button onclick="platform_speed(0)">ordinary</button>
+        <button onclick="platform_speed(1)">fast</button>
+      </div>
+      <div class="information">
+        <div class="info">management of 1 player</div>
+        arrows on the keyboard
+      </div>
+      <div class="information">
+        <div class="info">management of 2 player</div>
+        W / S  on the keyboard
+      </div>
+    </div>
+
+    <div class="score">
+      <div>
+        <span>Score:</span>
+        <span class="counter" id="left_counter">0</span>
+      </div>
+      <div>
+        <span>score:</span>
+        <span class="counter" id="right_counter">0</span>
+      </div>
+    </div>
+  </div>
+		<canvas id="canvas"></canvas>
+	</div>
+    <script src="./scripts/Vector2.js"></script>
+    <script src="./scripts/Game.js"></script>
+    <script src="./scripts/main.js"></script>    
+    <!-- <script src="./scripts/collision.js"></script>   -->
+</body>
+</html> 
