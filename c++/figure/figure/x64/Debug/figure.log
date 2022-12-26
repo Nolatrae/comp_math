@@ -1,0 +1,18 @@
+﻿  figure.cpp
+E:\comp_math\c++\figure\figure\figure.cpp(24,11): error C2259: "Triangle": невозможно создать экземпляр абстрактного класса
+E:\comp_math\c++\figure\figure\figure.h(85): message : см. объявление "Triangle"
+E:\comp_math\c++\figure\figure\figure.cpp(24,11): message : из-за следующих членов:
+E:\comp_math\c++\figure\figure\figure.cpp(24,11): message : double figure::calc_perimetr(void): абстрактный
+E:\comp_math\c++\figure\figure\figure.h(24): message : см. объявление "figure::calc_perimetr"
+E:\comp_math\c++\figure\figure\figure.cpp(24,15): error C2259: "Triangle": невозможно создать экземпляр абстрактного класса
+E:\comp_math\c++\figure\figure\figure.h(85): message : см. объявление "Triangle"
+E:\comp_math\c++\figure\figure\figure.cpp(24,15): message : из-за следующих членов:
+E:\comp_math\c++\figure\figure\figure.cpp(24,15): message : double figure::calc_perimetr(void): абстрактный
+E:\comp_math\c++\figure\figure\figure.h(24): message : см. объявление "figure::calc_perimetr"
+  figure_real.cpp
+  Создание кода...
+E:\comp_math\c++\figure\figure\figure_real.cpp(46): warning C4715: Circle::calc_area: значение возвращается не при всех путях выполнения
+E:\comp_math\c++\figure\figure\figure_real.cpp(61): warning C4715: Circle::calc_perimetr: значение возвращается не при всех путях выполнения
+E:\comp_math\c++\figure\figure\figure_real.cpp(90): warning C4715: Ellipse::calc_area: значение возвращается не при всех путях выполнения
+E:\comp_math\c++\figure\figure\figure_real.cpp(140): warning C4715: Rectangle::calc_area: значение возвращается не при всех путях выполнения
+E:\comp_math\c++\figure\figure\figure_real.cpp(154): warning C4715: Rectangle::calc_perimetr: значение возвращается не при всех путях выполнения
