@@ -1,4 +1,4 @@
-
+/* 
 
 var sec = 0;
 var min = 0;
@@ -36,4 +36,4 @@ function on_timer(){
   sw.textContent = "00:00";
 }
 
-document.addEventListener("DOMContentLoaded", initSW);
+document.addEventListener("DOMContentLoaded", initSW); */

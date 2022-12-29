@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>ToDoList</title>
+</head>
+<body>
+  <header>
+    <h1>Список задач</h1>
+    <form id="new-task-form">
+      <input type="text" id="new-task-input" placeholder="Какие планы?"/>
+      <div class="menu">
+        <div class="priority">
+          <span>Высокий приоритет</span>
+          <input type="checkbox" id="new_task_priority">
+      </div>
+      <div class="add">
+        <input type="submit" value="Добавить" id="new-task-submit" />
+      </div>
+      </div>
+
+    </form>
+  </header>
+  <main>
+    <section class="task-list">
+      <h2>Планы</h2>
+      <div id="tasks">
+      </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
