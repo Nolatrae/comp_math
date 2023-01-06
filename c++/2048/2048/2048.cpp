@@ -15,6 +15,7 @@
 
 using namespace std;
 
+int foo::hitCnt = 0;
 
 void SetCurPos(int x, int y) // помещает курсор в заданную точку экрана
 {
@@ -73,50 +74,11 @@ void TCell::Put(TSscreenMap scr)
 
 
 ////*valArr[] это массив указателей на клеточки, cnt - это длина массива\
-////moved говорит о том,что некоторые цифры на поле сместились
-//bool Tgame::MoveVallInArray(TAnimatedCell* valArr[], int cnt)
-//{
-//	bool moved = false;
-//	int lastX = 0; //позиция последней клетки, в которую можно перенести циферки
-//	for (int i = 1; i < cnt; i++) //проходим по всему массиву
-//		if (valArr[i]->value != 0) // если значение текущей клетки != 0
-//		{						  // то проверяем значение последней клеточки
-//			if (valArr[lastX]->value == 0)
-//			{
-//				moved = true;
-//				valArr[lastX]->value = valArr[i]->value;// помещаем значение текущей клетки в последнюю
-//				valArr[i]->value = 0; // а значение текущей сбрасываем в 0
-//			}
-//			else
-//			{
-//				if (valArr[lastX]->value == valArr[i]->value) //если значение последней и текущей ячейки совпадают
-//				{
-//					moved = true;
-//					valArr[lastX]->value += valArr[i]->value; //то просто складываем их в последней ячейке
-//					valArr[i]->value = 0; //текущую обнуляем
-//					lastX++;
-//				}
-//				else
-//				{
-//					if (valArr[lastX]->value != valArr[i]->value)//если значение последней и текущей ячейки  НЕ совпадают
-//					{
-//						lastX++; // последняя ячейка переходит на следующую 
-//						if (lastX != i) // изменения будут в том случае, если это всё таки разные ячейки
-//						{
-//							moved = true;
-//							valArr[lastX]->value = valArr[i]->value; // передвигаем значение
-//							valArr[i]->value = 0;//текущую обнуляем
-//						}
-//					}
-//				}
-//			}
-//		}
-//	return moved;
-//}
 
 bool Tgame::MoveVallInArray(TAnimatedCell* valArr[], int cnt)
-{
-	bool moved = false;
+{	
+	//int score = 0;
+	bool moved = false; ////moved говорит о том,что некоторые цифры на поле сместились
 	int lastX = 0; //позиция последней клетки, в которую можно перенести циферки
 	for (int i = 1; i < cnt; i++) //проходим по всему массиву
 		if (valArr[i]->value != 0) // если значение текущей клетки != 0
@@ -137,8 +99,11 @@ bool Tgame::MoveVallInArray(TAnimatedCell* valArr[], int cnt)
 					valArr[lastX]->Anim(valArr[lastX]->pos);
 					moved = true;
 					valArr[lastX]->value += valArr[i]->value; //то просто складываем их в последней ячейке
+					foo::hitCnt += valArr[lastX]->value;
+					//cout << valArr[lastX]->value << endl; //////////////////////////////////////////////////////////////////////////////////
 					valArr[i]->value = 0; //текущую обнуляем
 					lastX++;
+					score += 1;
 				}
 				else
 				{
@@ -159,39 +124,6 @@ bool Tgame::MoveVallInArray(TAnimatedCell* valArr[], int cnt)
 		}
 	return moved;
 }
-
-//void Tgame::Move(int dx, int dy) // dx and xy говорят о том куда надо подвинуть цифры
-//{
-//	bool moved = false;
-//	if (dx != 0) // двигаем фифры влево по оси Х
-//		for (int j = 0; j < fld_height; j++) // проходим по оси У
-//		{
-//			TCell* valArr[fld_width];
-//			for (int i = 0; i < fld_width; i++)
-//			{
-//				int x = (dx < 0) ? i : fld_width - i - 1;
-//				valArr[i] = &cell[j][x];
-//			}
-//			if (MoveVallInArray(valArr, fld_width)) moved = true;
-//		}
-//
-//	if (dy != 0) // двигаем фифры влево по оси Y
-//		for (int i = 0; i < fld_width; i++) // проходим по оси X
-//		{
-//			TCell* valArr[fld_height];
-//			for (int j = 0; j < fld_height; j++)
-//			{
-//				int y = (dy < 0) ? j : fld_height - j - 1;
-//				valArr[j] = &cell[y][i];
-//			}
-//			if (MoveVallInArray(valArr, fld_height)) moved = true;
-//		}
-//	if (CheckEndGame())
-//		Init();
-//	else
-//		if (moved) //если было передвижение, то добавляем чсило на поле
-//			GenNewRandNum();
-//}
 
 void Tgame::Move(int dx, int dy) // dx and xy говорят о том куда надо подвинуть цифры
 {
@@ -220,16 +152,21 @@ void Tgame::Move(int dx, int dy) // dx and xy говорят о том куда 
 			if (MoveVallInArray(valArr, fld_height)) moved = true;
 		}
 	if (CheckEndGame())
+	{
 		Init();
+		//if (hitCnt > maxHitCnt)
+		//{
+		//	maxHitCnt = hitCnt;
+		//}
+		//	hitCnt = 0;
+	}
 	else
-		if (moved) //если было передвижение, то добавляем чсило на поле
+		if (moved) //если было передвижение, то добавляем число на поле
 			GenNewRandNum(true);
-			//GenNewRandNum();
 }
 
 
 void Tgame::GenNewRandNum(bool anim)
-//void Tgame::GenNewRandNum()
 {
 	if (GetFreeCellCnt() == 0) return;// если пустых клеток нет то выходим
 	int cnt = 1;
@@ -292,23 +229,23 @@ void Tgame::Init()
 
 void Tgame::Work()
 {
-	if (KeyDownOnce('W')) Move(0, -1);
-	if (KeyDownOnce('S')) Move(0, 1);
-	if (KeyDownOnce('A')) Move(-1, 0);
-	if (KeyDownOnce('D')) Move(1, 0);
+	if (KeyDownOnce('W') || (GetKeyState(VK_UP) < 0)) Move(0, -1);
+	if (KeyDownOnce('S') || (GetKeyState(VK_DOWN) < 0)) Move(0, 1);
+	if (KeyDownOnce('A') || (GetKeyState(VK_LEFT) < 0)) Move(-1, 0);
+	if (KeyDownOnce('D') || (GetKeyState(VK_RIGHT) < 0)) Move(1, 0);
 }
 
-//void Tgame::Show()
+//void Tgame::Score()
 //{
-//	for (int i = 0; i < fld_width * fld_height; i++) cell[0][i].Put(screen.scr);
-//	screen.Show();
-//}
+//	cout << rand() % fld_width;
+//}  
+
 
 void Tgame::Show()
 {
 	for (int i = 0; i < fld_width * fld_height; i++) cell[0][i].PutState(screen.scr);
 	for (int i = 0; i < fld_width * fld_height; i++) cell[0][i].PutAnim(screen.scr);
-
+	//cout << score << endl;
 	screen.Show();
 }
 
@@ -348,4 +285,23 @@ void TAnimatedCell::PutState(TSscreenMap scr)
 	}
 	else
 		Put(scr);
+}
+
+
+
+void ShowPreview()
+{
+	system("cls");
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n \t\t\t\t    2048");
+	//for (int i = 0; i < 10; i++) {
+	//	cout << '\n';
+	//	for (int j = 0; j < 5; j++) {
+	//		cout << '\n';
+	//		if (j == 4) {
+	//		cout << "2048";
+	//		}
+	//	}
+	//}
+	Sleep(1000);
+	system("cls");
 }

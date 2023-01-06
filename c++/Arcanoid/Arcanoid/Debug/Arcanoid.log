@@ -1,0 +1,10 @@
+﻿  Arcanoid.cpp
+D:\comp_math\c++\Arcanoid\Arcanoid\Arcanoid.cpp(55,45): warning C4305: +=: усечение из "double" в "float"
+D:\comp_math\c++\Arcanoid\Arcanoid\Arcanoid.cpp(56,52): warning C4305: -=: усечение из "double" в "float"
+D:\comp_math\c++\Arcanoid\Arcanoid\Arcanoid.cpp(70,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\comp_math\c++\Arcanoid\Arcanoid\Arcanoid.cpp(74,52): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\comp_math\c++\Arcanoid\Arcanoid\Arcanoid.cpp(76,41): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\comp_math\c++\Arcanoid\Arcanoid\Arcanoid.cpp(80,44): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\comp_math\c++\Arcanoid\Arcanoid\Arcanoid.cpp(82,33): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\comp_math\c++\Arcanoid\Arcanoid\Arcanoid.cpp(170,10): warning C4101: c: неиспользованная локальная переменная
+  Arcanoid.vcxproj -> D:\comp_math\c++\Arcanoid\Debug\Arcanoid.exe

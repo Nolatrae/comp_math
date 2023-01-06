@@ -9,12 +9,20 @@
 
 
 using namespace std;
-const int scr_width = 60;      // размер консольного окна
-const int scr_height = 50;     // размер консольного окна
+const int scr_width = 80;      // размер консольного окна
+const int scr_height = 40;     // размер консольного окна
 const int cell_width = 8;      // размер клетки с содержимым
 const int cell_height = 5;	   // размер клетки с содержимым
 const int fld_width = 4;     // размер игрового поля в клетках
 const int fld_height = 4;    // размер игрового поля в клетках
+
+//int maxHitCnt = 0;
+
+namespace foo
+{
+extern int hitCnt;
+}
+
 
 typedef char TSscreenMap[scr_height][scr_width]; //хранит символы для вывода на экран
 
@@ -57,22 +65,22 @@ public:
 class Tgame
 {
 	TScreen screen;
-	TAnimatedCell cell[fld_height][fld_width];
-	//TCell cell[fld_height][fld_width]; // массив клеточек = игровое поле
-	//bool MoveVallInArray(TCell* valArr[], int cnt); // механика перемещения 
-	bool MoveVallInArray(TAnimatedCell *valArr[], int cnt);
+	TAnimatedCell cell[fld_height][fld_width]; // массив клеточек = игровое поле
+	bool MoveVallInArray(TAnimatedCell *valArr[], int cnt); // механика перемещения 
 	void Move(int dx, int dy); // управление перемещением чисел на карте
-	void GenNewRandNum(bool anim = false); // создаёт числа в разныъ клеточках
-	//void GenNewRandNum(); // создаёт числа в разныъ клеточках
-
+	void GenNewRandNum(bool anim = false); // создаёт числа в разных клеточках
 	int GetFreeCellCnt(); // возращает количество пустых клеточек на карте
 	bool CheckEndGame();
 public:
+	int score;
 	Tgame() { Init(); }
 	void Init(); //инициаизация
 	void Work();
+	//void Score();
 	void Show(); // отображение игры на экране
 };
 
 
+void ShowPreview();
+//int hitCnt = 0;
 #endif // 
