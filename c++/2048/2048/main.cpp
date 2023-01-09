@@ -12,20 +12,22 @@
 
 int main()
 {
-	//ShowPreview();
 
-	TScreen screen;
-	//screen.scr[6][6] = 'E';
-	//screen.scr[8][8] = 'E';
-	//screen.Show();
+	//consoleView view;
+	//view.buffer[6][6] = 'E';
+	//view.buffer[8][8] = 'E';
+	//view.Show();  
+	 
+	//consoleView view;
+	//Cell cell;
+	//cell.Init(6, 6, 35);
+	//cell.Draw(view.buffer);
+	//cell.Init(10, 10, 15);
+	//cell.Draw(view.buffer);
+	//view.Show();
 
-	//int width, height;
-	//cout << "¬ведите ширину пол€ - " << endl;
-	//cin >> width;
-	//cout << "¬ведите высоту пол€ - " << endl;
-	//cin >> height;
-
-	Tgame game;
+	ShowPreview();
+	Game game;
 	while (1)
 	{
 		game.Work(); // нажатие клавиши
@@ -35,24 +37,10 @@ int main()
 			ShowEndGame(true);
 			break;
 		}
-		Sleep(10); // плавность анимации
+		Sleep(10);
 	}
 
-	//TCell cell;
-	//cell.Init(6, 6, 77);
-	//cell.Put(screen.scr);
-	//cell.Init(10, 10, 15);
-	//cell.Put(screen.scr);
-	//screen.Show();
 
-	//cout << hitCnt << ' ' << maxHitCnt << endl;
-	//cout << foo::hitCnt << endl;
-	//int score = 3;
-	//int* scorePTR = NULL;
-	//scorePTR = &score;
-	//*scorePTR = 1 + *scorePTR;
-	//cout << *scorePTR;
-	//cout << game.score << endl;
 	return 0;
 }
 

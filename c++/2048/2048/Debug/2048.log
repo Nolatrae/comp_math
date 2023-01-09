@@ -1,6 +1,2 @@
-﻿  2048.cpp
-E:\comp_math\c++\2048\2048\2048.cpp(298,10): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
-E:\comp_math\c++\2048\2048\2048.cpp(299,10): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
-  main.cpp
-  Создание кода...
+﻿  main.cpp
   2048.vcxproj -> E:\comp_math\c++\2048\Debug\2048.exe
