@@ -1,0 +1,24 @@
+1.a SELECT * FROM `clients` WHERE name = 'Robert';
+1.б SELECT * FROM `clients` WHERE name = 'Jeffrey';
+1.в SELECT * FROM `clients` WHERE name = 'John'
+1.г SELECT * FROM `clients` WHERE name = 'Richard';
+1.д SELECT * FROM `clients` WHERE name = 'David';
+1.e SELECT * FROM `clients` WHERE name = 'Robert' OR name = 'Jeffrey' OR name = 'John' OR name = 'Richard' OR name = 'David';
+
+2.a SELECT * FROM `clients` WHERE gender = 'F';
+2.б SELECT * FROM `clients` WHERE gender = 'M';
+
+3.a SELECT name, phone FROM `clients` WHERE lastname = 'Williams';
+3.б SELECT name, phone FROM `clients` WHERE lastname = 'Jones';
+3.в SELECT name, phone FROM `clients` WHERE lastname = 'Brown';
+3.г SELECT name, phone FROM `clients` WHERE lastname = 'Miller';
+3.д SELECT name, phone FROM `clients` WHERE lastname = 'Williams' or lastname = 'Jones' or lastname = 'Brown' or lastname = 'Miller';
+
+4.a SELECT dbirth, gender FROM `clients` WHERE name = 'Kelly' or lastname = 'Kelly';
+4.б SELECT dbirth, gender FROM `clients` WHERE name = 'Thomas' or lastname = 'Thomas';
+4.в SELECT dbirth, gender FROM `clients` WHERE name = 'Clark' or lastname = 'Clark';
+4.г SELECT dbirth, gender FROM `clients` WHERE name = 'Joseph' or lastname = 'Joseph';
+
+5.а SELECT gender, dbirth, phone FROM `clients` WHERE name = 'Tom' and lastname = 'Brown'
+5.б SELECT gender, dbirth, phone FROM `clients` WHERE name = 'Janet' and lastname = 'Silberstein'
+5.в SELECT gender, dbirth, phone FROM `clients` WHERE name = 'John' and lastname = 'Foster'
